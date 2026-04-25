@@ -215,14 +215,14 @@ async def major_login(open_id: str, access_token: str) -> Optional[Dict]:
     serialized = req.SerializeToString()
     encrypted = await EnC_AEs(serialized.hex())
 
-    url = "https://loginbp.ggblueshark.com/MajorLogin"
+    url = "https://loginbp.ggpolarbear.com/MajorLogin"
     headers = {
         "X-Unity-Version": "2018.4.11f1",
         "ReleaseVersion": "OB53",
         "Content-Type": "application/x-www-form-urlencoded",
         "X-GA": "v1 1",
         "User-Agent": "Dalvik/2.1.0 (Linux; U; Android 11; ASUS_Z01QD Build/PI)",
-        "Host": "loginbp.ggblueshark.com",
+        "Host": "loginbp.ggpolarbear.com",
         "Connection": "Keep-Alive",
         "Accept-Encoding": "gzip",
     }
